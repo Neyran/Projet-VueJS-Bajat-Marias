@@ -13,13 +13,13 @@
                         
                         <md-card-content>
                             <h3>Entrée</h3>
-                            <p>{{menu[0].entree.nom}} {{menu[0].entree.prix}} {{menu[0].entree.ingrédient}}</p>
+                            <p>{{menu[0].entree.nom}} {{menu[0].entree.ingrédient}}</p>
                             <img v-bind:src="menu[0].entree.photo">
                             <h3>Plat</h3>
-                            <p>{{menu[0].plat.nom}} {{menu[0].plat.prix}} {{menu[0].plat.ingrédient}}</p>
+                            <p>{{menu[0].plat.nom}} {{menu[0].plat.ingrédient}}</p>
                             <img v-bind:src="menu[0].plat.photo">
                             <h3>Dessert</h3>
-                            <p>{{menu[0].dessert.nom}} {{menu[0].dessert.prix}} {{menu[0].dessert.ingrédient}}</p>
+                            <p>{{menu[0].dessert.nom}} {{menu[0].dessert.ingrédient}}</p>
                             <img v-bind:src="menu[0].dessert.photo">
                         </md-card-content>
                     </md-ripple>
@@ -35,13 +35,13 @@
                         
                         <md-card-content>
                             <h3>Entrée</h3>
-                            <p>{{menu[1].entree.nom}} {{menu[1].entree.prix}} {{menu[1].entree.ingrédient}}</p>
+                            <p>{{menu[1].entree.nom}} {{menu[1].entree.ingrédient}}</p>
                             <img v-bind:src="menu[1].entree.photo">
                             <h3>Plat</h3>
-                            <p>{{menu[1].plat.nom}} {{menu[1].plat.prix}} {{menu[1].plat.ingrédient}}</p>
+                            <p>{{menu[1].plat.nom}} {{menu[1].plat.ingrédient}}</p>
                             <img v-bind:src="menu[1].plat.photo">
                             <h3>Dessert</h3>
-                            <p>{{menu[1].dessert.nom}} {{menu[1].dessert.prix}} {{menu[1].dessert.ingrédient}}</p>
+                            <p>{{menu[1].dessert.nom}} {{menu[1].dessert.ingrédient}}</p>
                             <img v-bind:src="menu[1].dessert.photo">             
                         </md-card-content>
                     </md-ripple>
@@ -57,13 +57,13 @@
                         
                         <md-card-content>
                             <h3>Entrée</h3>
-                            <p>{{menu[2].entree.nom}} {{menu[2].entree.prix}} {{menu[2].entree.ingrédient}}</p>
+                            <p>{{menu[2].entree.nom}} {{menu[2].entree.ingrédient}}</p>
                             <img v-bind:src="menu[2].entree.photo">
                             <h3>Plat</h3>
-                            <p>{{menu[2].plat.nom}} {{menu[2].plat.prix}} {{menu[2].plat.ingrédient}}</p>
+                            <p>{{menu[2].plat.nom}} {{menu[2].plat.ingrédient}}</p>
                             <img v-bind:src="menu[2].plat.photo">
                             <h3>Dessert</h3>
-                            <p>{{menu[2].dessert.nom}} {{menu[2].dessert.prix}} {{menu[2].dessert.ingrédient}}</p>
+                            <p>{{menu[2].dessert.nom}} {{menu[2].dessert.ingrédient}}</p>
                             <img v-bind:src="menu[2].dessert.photo">
                         </md-card-content>
                     </md-ripple>
