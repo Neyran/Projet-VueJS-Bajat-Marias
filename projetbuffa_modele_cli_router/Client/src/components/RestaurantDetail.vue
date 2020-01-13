@@ -2,16 +2,16 @@
   <div>
 
     <div v-if="restaurantInformation.restaurant.address" class="md-layout md-gutter">
-        <div class="md-layout-item">
-          <h1>Consulter Informations</h1>
-        </div>
-        <div class="md-layout-item">
-          <h2>Restaurant : {{restaurantInformation.restaurant.name}}</h2>
-        </div>
-        <div class="md-layout-item">
-          <router-link to="/"><md-button class="md-raised md-accent">Retour</md-button></router-link>
-        </div>
+      <div class="md-layout-item">
+        <h1 style="font: italic small-caps bold 30px cursive;">Consulter Informations</h1>
       </div>
+      <div class="md-layout-item" style="margin-top :5em;" >
+        <h3>Restaurant : {{restaurantInformation.restaurant.name}}</h3>
+      </div>
+      <div class="md-layout-item">
+        <router-link to="/" style="float: right;"><md-button class="md-raised md-accent">Retour</md-button></router-link>
+      </div>
+    </div>
         <img v-bind:src="randomPicture()">
 
         <div v-if="restaurantInformation.restaurant.address" class="md-layout md-gutter">

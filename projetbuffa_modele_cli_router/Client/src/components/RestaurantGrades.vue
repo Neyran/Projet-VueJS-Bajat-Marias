@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>Avis laissés par les consommateurs : </h3>
+        <h1 style="margin-top : 3em;">Avis laissés par les consommateurs : </h1>
         <md-table v-model="restaurantInformation.restaurant.grades" md-sort="name" md-sort-order="asc" md-card md-fixed-header>
             <md-table-empty-state
             md-label="No users found"

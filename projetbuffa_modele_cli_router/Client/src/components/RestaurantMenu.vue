@@ -1,59 +1,115 @@
 <template>
     <div>
-        <H3>Nos menus</H3>
-            <li>Menu 1</li>
-                <ol>
-                    <li>Entrée</li>
-                    <p>{{menu[0].entree.nom}} {{menu[0].entree.prix}} {{menu[0].entree.ingrédient}}</p>
-                    <img v-bind:src="menu[0].entree.photo">
-                    <li>Plat</li>
-                    <p>{{menu[0].plat.nom}} {{menu[0].plat.prix}} {{menu[0].plat.ingrédient}}</p>
-                    <img v-bind:src="menu[0].plat.photo">
-                    <li>Dessert</li>
-                    <p>{{menu[0].dessert.nom}} {{menu[0].dessert.prix}} {{menu[0].dessert.ingrédient}}</p>
-                    <img v-bind:src="menu[0].dessert.photo">
-                </ol>
-            <li>Menu 2</li>
-            <ol>
-                    <li>Entrée</li>
-                    <p>{{menu[1].entree.nom}} {{menu[1].entree.prix}} {{menu[1].entree.ingrédient}}</p>
-                    <img v-bind:src="menu[1].entree.photo">
-                    <li>Plat</li>
-                    <p>{{menu[1].plat.nom}} {{menu[1].plat.prix}} {{menu[1].plat.ingrédient}}</p>
-                    <img v-bind:src="menu[1].plat.photo">
-                    <li>Dessert</li>
-                    <p>{{menu[1].dessert.nom}} {{menu[1].dessert.prix}} {{menu[1].dessert.ingrédient}}</p>
-                    <img v-bind:src="menu[1].dessert.photo">
-            </ol>
-            <li>Menu 3</li>
-            <ol>
-                    <li>Entrée</li>
-                    <p>{{menu[2].entree.nom}} {{menu[2].entree.prix}} {{menu[2].entree.ingrédient}}</p>
-                    <img v-bind:src="menu[2].entree.photo">
-                    <li>Plat</li>
-                    <p>{{menu[2].plat.nom}} {{menu[2].plat.prix}} {{menu[2].plat.ingrédient}}</p>
-                    <img v-bind:src="menu[2].plat.photo">
-                    <li>Dessert</li>
-                    <p>{{menu[2].dessert.nom}} {{menu[2].dessert.prix}} {{menu[2].dessert.ingrédient}}</p>
-                    <img v-bind:src="menu[2].dessert.photo">
-            </ol>
-        <h3>A la carte</h3>
-        <h4>Entrées</h4>
-            
-        <li v-for="item in entrees" :key='item'>
-            {{item.nom}} {{item.prix}} {{item.ingrédient}}
-        </li>
-     <h4>Plats</h4> 
-        <li v-for="item in plats" :key='item'>
-            {{item.nom}} {{item.prix}} {{item.ingrédient}}
-        </li>
-         <h4>Desserts</h4>
-            
-        <li v-for="item in desserts" :key='item'>
-            {{item.nom}} {{item.prix}} {{item.ingrédient}}
-        </li>
-        <p>Tu me fais un V-for i=30 avec 10 entrées 10 plats et 10 dessert aléatoire parmis ta liste</p>
+        <h1 style="margin-top : 3em;">Nos menus</h1>
 
+        <div class="md-layout md-gutter">
+            <div class="md-layout-item">
+                <md-card md-with-hover>
+                    <md-ripple>
+                        <md-card-header>
+                        <div class="md-title">{{menu[0].nom}}</div>
+                        <div class="md-subhead">{{menu[0].prix}}</div>
+                        </md-card-header>
+                        
+                        <md-card-content>
+                            <h3>Entrée</h3>
+                            <p>{{menu[0].entree.nom}} {{menu[0].entree.prix}} {{menu[0].entree.ingrédient}}</p>
+                            <img v-bind:src="menu[0].entree.photo">
+                            <h3>Plat</h3>
+                            <p>{{menu[0].plat.nom}} {{menu[0].plat.prix}} {{menu[0].plat.ingrédient}}</p>
+                            <img v-bind:src="menu[0].plat.photo">
+                            <h3>Dessert</h3>
+                            <p>{{menu[0].dessert.nom}} {{menu[0].dessert.prix}} {{menu[0].dessert.ingrédient}}</p>
+                            <img v-bind:src="menu[0].dessert.photo">
+                        </md-card-content>
+                    </md-ripple>
+                </md-card>            
+            </div>
+            <div class="md-layout-item">
+                <md-card md-with-hover>
+                    <md-ripple>
+                        <md-card-header>
+                        <div class="md-title">{{menu[1].nom}}</div>
+                        <div class="md-subhead">{{menu[1].prix}}</div>
+                        </md-card-header>
+                        
+                        <md-card-content>
+                            <h3>Entrée</h3>
+                            <p>{{menu[1].entree.nom}} {{menu[1].entree.prix}} {{menu[1].entree.ingrédient}}</p>
+                            <img v-bind:src="menu[1].entree.photo">
+                            <h3>Plat</h3>
+                            <p>{{menu[1].plat.nom}} {{menu[1].plat.prix}} {{menu[1].plat.ingrédient}}</p>
+                            <img v-bind:src="menu[1].plat.photo">
+                            <h3>Dessert</h3>
+                            <p>{{menu[1].dessert.nom}} {{menu[1].dessert.prix}} {{menu[1].dessert.ingrédient}}</p>
+                            <img v-bind:src="menu[1].dessert.photo">             
+                        </md-card-content>
+                    </md-ripple>
+                </md-card>
+            </div>
+            <div class="md-layout-item">
+                <md-card md-with-hover>
+                    <md-ripple>
+                        <md-card-header>
+                        <div class="md-title">{{menu[2].nom}}</div>
+                        <div class="md-subhead">{{menu[2].prix}}</div>
+                        </md-card-header>
+                        
+                        <md-card-content>
+                            <h3>Entrée</h3>
+                            <p>{{menu[2].entree.nom}} {{menu[2].entree.prix}} {{menu[2].entree.ingrédient}}</p>
+                            <img v-bind:src="menu[2].entree.photo">
+                            <h3>Plat</h3>
+                            <p>{{menu[2].plat.nom}} {{menu[2].plat.prix}} {{menu[2].plat.ingrédient}}</p>
+                            <img v-bind:src="menu[2].plat.photo">
+                            <h3>Dessert</h3>
+                            <p>{{menu[2].dessert.nom}} {{menu[2].dessert.prix}} {{menu[2].dessert.ingrédient}}</p>
+                            <img v-bind:src="menu[2].dessert.photo">
+                        </md-card-content>
+                    </md-ripple>
+                </md-card>
+            </div>
+        </div>
+                    
+        <h1 style="margin-top : 3em;">A la carte</h1>
+        <div class="md-layout md-gutter">
+            <div class="md-layout-item">
+                <md-list class="md-double-line">
+                    <md-subheader>Entrées</md-subheader>
+                    <md-list-item v-for="item in entrees" :key='item'>
+                        <div class="md-list-item-text">
+                            <span>{{item.nom}} {{item.prix}} </span>
+                            <span>{{item.ingrédient}}</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <div class="md-layout-item">
+                <md-list class="md-double-line">
+                    <md-subheader>Plats</md-subheader>
+
+                    <md-list-item v-for="item in plats" :key='item'>
+                        <div class="md-list-item-text">
+                            <span>{{item.nom}} {{item.prix}} </span>
+                            <span>{{item.ingrédient}}</span>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <div class="md-layout-item">
+                <md-list class="md-double-line">
+                    <md-subheader>Desserts</md-subheader>
+
+                    <md-list-item v-for="item in desserts" :key='item'>
+                        <div class="md-list-item-text">
+                            <span>{{item.nom}} {{item.prix}} </span>
+                            <span>{{item.ingrédient}}</span>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -252,7 +308,7 @@ export default {
                 plat : "",
                 dessert : ""},
                 {
-                nom : "provencal",
+                nom : "Provencal",
                 prix : "55€",
                 entree : "",
                 plat: "",
